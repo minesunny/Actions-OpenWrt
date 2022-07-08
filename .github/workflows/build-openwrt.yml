@@ -44,7 +44,7 @@ jobs:
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
-        FORCE_UNSAFE_CONFIGURE： 1
+        FORCE_UNSAFE_CONFIGURE: 1
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
